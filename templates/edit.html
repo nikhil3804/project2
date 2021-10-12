@@ -1,0 +1,19 @@
+Welcome to login page
+
+<form method="POST"> 
+
+{%csrf_token %}
+{{submit}}
+
+{{show}}
+
+{{errors}}
+login:-<input type="name" name='login' value="{{showing.login}}">
+password:-<input type="password" name='password' value="{{showing.password}}">
+<input type="submit" value="add">
+
+
+</form>
+
+<hr> 
+

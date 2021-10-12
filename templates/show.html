@@ -1,0 +1,15 @@
+{% if show %}
+<h1> data found</h1>
+{% for obj in show %}
+{{obj.login}} {{obj.password}} <div>  <a href="/mypage/delete/{{obj.id}}"> Delete </a> <a href="/mypage/update/{{obj.id}}"> Edit </a>
+    </div>
+{% endfor %}
+{% else %}
+ <h1> data not found </h1>
+{% endif %}
+
+<hr>
+<a href="add"> Back </a>
+
+
+{{save}}
